@@ -1,10 +1,11 @@
 Package: usflyr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: United States Flight Data
 Version: 0.1.0
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: Keith Spaar, Meagan Londa, Arjun Reddy
+Maintainer: Keith Spaar <ks5xq@virginia.edu>
+Description: Uses data from the US bureau of Transportation to analyze domestic flights
+License: GDL - 3
 LazyData: TRUE
 RoxygenNote: 5.0.1
 Suggests: testthat
