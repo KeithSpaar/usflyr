@@ -2,12 +2,12 @@
 #'
 #' @param Origin Origin airport abbreviation
 #' @param Destination Destination airport abbreviation
-#' @return The cause of delay
+#' @return The most frequent cause of delay
 #' @examples
 #' Delay_Reason("JFK")
 #' Delay_Reason("JFK", "LAX")
 #' @export
-#'
+
 load("data/FlightData.RData")
 flights <- flightsSub
 rm(flightsSub)

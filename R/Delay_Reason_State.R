@@ -7,10 +7,10 @@
 #' Delay_Reason_State("NJ")
 #' Delay_Reason_State("NJ", "CO")
 #' @export
-#'
 load("data/FlightData.RData")
 flights <- flightsSub
 rm(flightsSub)
+
 
 Delay_Reason_State <- function(Origin, Destination = NULL)
   if(is.null(Destination)){

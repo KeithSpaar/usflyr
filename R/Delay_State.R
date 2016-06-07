@@ -2,6 +2,7 @@
 #'
 #' @param origin State they are leaving from.
 #' @param destination State they are going to.
+#' @param Month Month of Departure
 #' @return Estimated delay time based one the state the user is going.
 #' @examples
 #' Delay_State("NY", "MI")
@@ -10,8 +11,7 @@
 load("data/FlightData.RData")
 flights <- flightsSub
 rm(flightsSub)
-
-Delay_State <- function(origin, destination = NULL, months = c(1:12)){
+Delay_State <- function(origin, destination = NULL, month = c(1:12)){
   if(is.null(destination)){
     mean(flights[which(flights$ORIGIN_STATE_ABR == origin & flights$MONTH %in% month),]$DEP_DELAY, na.rm = T)
   }
